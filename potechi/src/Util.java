@@ -26,7 +26,7 @@ public class Util {
     public static String exec(String cmd) {
         try {
             // Run script
-            Process process = Runtime.getRuntime().exec("/tmp/myscript.sh");
+            Process process = Runtime.getRuntime().exec(cmd);
 
             // Read output
             StringBuilder output = new StringBuilder();
